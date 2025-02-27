@@ -1,0 +1,183 @@
+.about {
+    padding: 80px 10%;
+    color: antiquewhite;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .about-title {
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .about-title h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 2; /* Keeps the text on top */
+    display: inline-block;
+  }
+  
+  .about-title img {
+    position: absolute;
+    top: 50%;
+    left: 55%; /* Moves it to the right side */
+    transform: translate(-50%, -50%) rotate(-10deg); /* Slight rotation */
+    width: 160px; /* Adjust width */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: contain;
+    opacity: 0.8; /* Light opacity for background effect */
+    z-index: 1; /* Keeps it behind the text */
+  }
+  
+  
+  
+  .about-sections {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+  }
+  
+  .about-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about-left img {
+    width: 350px; /* Keep original width */
+    height: auto;
+    border-radius: 15px; /* Slightly rounded corners for a modern look */
+    object-fit: cover; /* Ensure it covers the frame properly */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.about-left img:hover {
+    transform: scale(1.05); /* Slight upscale on hover */
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+  .about-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .about-para p {
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.8;
+    margin-bottom: 20px;
+  }
+  
+  .about-skills {
+    margin-top: 30px;
+  }
+  
+  .about-skill p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .about-skill hr {
+    height: 5px;
+    background: #00d4ff;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .about-skill hr:hover {
+    background: #007bff;
+    width: 100%;
+  }
+
+  .about-achievement {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    color: antiquewhite;
+  }
+  
+  .achievement-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #323232;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(57, 57, 57, 0.1);
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+  }
+  
+  .achievement-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .achievement-icon img {
+    width: 60px; /* Adjust the size of the icons */
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
+  
+  .achievement-item h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .achievement-item p {
+    font-size: 1rem;
+    color: antiquewhite;
+    line-height: 1.6;
+    opacity: 0.8;
+  }
+  
+  @media (max-width: 768px) {
+    .about-achievement {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .achievement-item {
+      flex: none;
+      margin-bottom: 20px;
+      width: 80%; /* Adjust width for smaller screens */
+    }
+  }
+  
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-sections {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px 20px;
+    }
+  
+    .about-left {
+      margin-bottom: 30px;
+    }
+  
+    .about-left img {
+      width: 300px;
+      height: auto;
+    }
+  
+    .about-right {
+      flex: 1;
+    }
+  }
+  
